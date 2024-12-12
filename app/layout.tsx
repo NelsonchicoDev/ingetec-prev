@@ -7,8 +7,8 @@ import StairTransition from "@/components/StairTransition";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "John Doe | Software Engineer",
-  description: "A portfolio website for education purposes",
+  title: "Hans Riffo | Prevencionista",
+  description: "Prevención de riesgos laborales",
 };
 
 const raleway = localFont({
@@ -24,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} antialiased text-white/80`}>
+      <body
+        cz-shortcut-listen="true"
+        className={`${raleway.variable} antialiased text-white/80`}
+      >
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>

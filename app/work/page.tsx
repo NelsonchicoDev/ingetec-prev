@@ -26,18 +26,18 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: "01",
-    title: "E-commerce Platform",
-    category: "Full Stack",
+    title: "Botín VFlex Thinsulate V15 Negro/Azul",
+    category: "Calzado",
     description:
-      "A modern e-commerce platform built with Next.js, featuring a responsive design, user authentication, and integration with a headless CMS for easy content management.",
-    stack: ["Next.js", "Tailwind CSS", "Strapi", "PostgreSQL"],
+      "Calzados de Uso General y Alto Rendimiento. Su excelente combinación de diseño y confort brindan un amplio rango de uso en actividades tales como Industria, Minería, Construcción y afines. De acuerdo a la tabla de protección individual se puede definir su mejor uso específico.",
+    stack: ["Seguridad", "Proteccion"],
     image: projectOne,
     liveUrl: "https://ecommerceapp.reactbd.com/",
     githubUrl: "https://github.com/noorjsdivs/",
   },
   {
     id: "02",
-    title: "Task Management App",
+    title: "Zapato Vflex V73 Microfibrer",
     category: "Frontend",
     description:
       "A sleek task management application that helps users organize their daily activities, set priorities, and track progress. Built with React and Redux for state management.",
@@ -63,7 +63,10 @@ const WorkPage = () => {
   return (
     <div className="py-6 md:py-12">
       <PageLayout>
-        <Carousel opts={{ align: "start", loop: true }} className="w-full">
+        <Carousel
+          opts={{ align: "start", loop: true }}
+          className="w-full"
+        >
           <CarouselContent>
             {projects?.map((project) => (
               <CarouselItem key={project.id}>

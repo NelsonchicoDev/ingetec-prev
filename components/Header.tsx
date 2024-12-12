@@ -15,7 +15,10 @@ const Header = () => {
   return (
     <header className="border-b border-b-hoverColor/20 bg-bodyColor text-white sticky top-0 z-50">
       <Container className="py-5 flex items-center justify-between">
-        <Logo title="John" subtitle="." />
+        <Logo
+          title="Hans"
+          subtitle="."
+        />
         <div className="hidden md:inline-flex items-center gap-7 text-sm uppercase tracking-wide font-medium">
           {navbarData?.map((item) => (
             <Link
@@ -41,7 +44,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="text-sm bg-lightSky/10 px-4 py-2 rounded-md border border-hoverColor/10 hover:border-hoverColor hover:bg-hoverColor hover:text-black hoverEffect"
           >
-            Hire me
+            Contratarme
           </Link>
         </div>
         <button

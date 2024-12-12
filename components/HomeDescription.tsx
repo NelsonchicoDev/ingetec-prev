@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const HomeDescription = () => {
   const [hasLoaded, setHasLoaded] = useState(false);
   const description =
-    "sAs a Software Engineer, I design and build innovative software solutions, solve complex problems, and ensure systems are scalable and user-friendly. From creating web apps to optimizing backend systems, I bridge the gap between technology and user needs.";
+    "sLa prevención de riesgos laborales es un pilar fundamental para garantizar la seguridad y el bienestar de los trabajadores en cualquier organización. Implementar medidas efectivas no solo reduce accidentes.";
   const { displayedText, isComplete } = useTypeWriter(description, 30);
 
   useEffect(() => {
