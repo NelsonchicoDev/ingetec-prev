@@ -18,27 +18,27 @@ const socialData = [
   {
     title: "Youtube",
     icon: <Youtube />,
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.youtube.com",
   },
   {
     title: "Instagram",
     icon: <Instagram />,
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.youtube.com",
   },
   {
     title: "Linkedin",
     icon: <Linkedin />,
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.youtube.com",
   },
   {
     title: "Facebook",
     icon: <Facebook />,
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.youtube.com",
   },
   {
     title: "Whatssap",
     icon: <PhoneCallIcon />,
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://wa.me/56931744299",
   },
 ];
 

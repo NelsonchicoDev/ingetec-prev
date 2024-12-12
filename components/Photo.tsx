@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import hero from "@/images/hans.png";
+import hero from "@/images/hero.png";
 import Image from "next/image";
 import { motion } from "motion/react";
 

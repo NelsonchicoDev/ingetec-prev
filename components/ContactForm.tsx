@@ -93,7 +93,7 @@ const ContactForm = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-2xl md:text-4xl text-lightSky">
-        Ingetec-Prev Asesorías de Prevención de Riesgo
+        Ingetec-Prev Nº VP/T 1894
       </h3>
       <p>
         Se formó ante la necesidad de las empresas de contar con asesoramiento y
@@ -113,7 +113,7 @@ const ContactForm = () => {
                 id="Name"
                 name="Name"
                 required
-                placeholder="Your name"
+                placeholder="Su nombre"
                 value={formData.Name}
                 onChange={handleChange}
                 disabled={loading}
@@ -122,7 +122,7 @@ const ContactForm = () => {
               <Input
                 type="email"
                 id="Email"
-                name="Email"
+                name="Correo electrónico"
                 required
                 placeholder="Email address"
                 value={formData.Email}
@@ -136,7 +136,7 @@ const ContactForm = () => {
                 type="text"
                 id="Phone"
                 name="Phone"
-                placeholder="Phone number"
+                placeholder="Numero de teléfono"
                 value={formData.Phone}
                 onChange={handleChange}
                 disabled={loading}
@@ -146,7 +146,7 @@ const ContactForm = () => {
                 type="text"
                 id="Address"
                 name="Address"
-                placeholder="Address"
+                placeholder="Ciudad"
                 value={formData.Address}
                 onChange={handleChange}
                 disabled={loading}
@@ -167,12 +167,12 @@ const ContactForm = () => {
               disabled={loading}
             >
               <SelectTrigger>
-                <SelectValue placeholder="Select a service" />
+                <SelectValue placeholder="Seleccione un servicio" />
               </SelectTrigger>
               <SelectContent className="bg-bodyColor text-white border-white/20">
                 <SelectGroup>
-                  <SelectLabel>Select a service</SelectLabel>
-                  <SelectItem value="servicio">Servicios</SelectItem>
+                  <SelectLabel>Seleccione un servicio</SelectLabel>
+                  {/* <SelectItem value="servicio">Servicios</SelectItem> */}
                   <SelectItem value="Prevención de riesgos laborales">
                     Prevención de riesgos laborales
                   </SelectItem>
