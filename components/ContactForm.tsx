@@ -65,7 +65,7 @@ const ContactForm = () => {
       form.append("Service", formData.Service);
       form.append("DateTime", currentDateTime);
 
-      const response = await fetch("", {
+      const response = await fetch("https://getform.io/f/bvrrjxwb", {
         method: "POST",
         body: form,
       });
