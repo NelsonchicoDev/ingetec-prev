@@ -83,14 +83,18 @@ const tabContent = {
   },
   about: {
     title: "Sobre mí",
-    bio: "Somos un Servicio de Prevención de Riesgos Laborales externo, independiente, creado y dedicado exclusivamente para apoyar a las empresas en esta materia, y que no tiene intereses en otros sectores económicos..",
-    interests: [
-      "Prevención de riesgos laborales",
-      "Seguridad en el trabajo",
-      "Salud ocupacional",
-      "Gestión de riesgos laborales",
+    items: [
+      {
+        bio: "Somos un Servicio de Prevención de Riesgos Laborales externo, independiente, creado y dedicado exclusivamente para apoyar a las empresas en esta materia, y que no tiene intereses en otros sectores económicos..",
+        interests: [
+          "Prevención de riesgos laborales",
+          "Seguridad en el trabajo",
+          "Salud ocupacional",
+          "Gestión de riesgos laborales",
+        ],
+        languages: ["English (Intermediate)", "German (Basic)"],
+      },
     ],
-    languages: ["English (Intermediate)", "German (Basic)"],
   },
 };
 const ResumePage = () => {
@@ -255,7 +259,7 @@ const ResumePage = () => {
                 {tabContent.about.title}
               </motion.h2>
               <div className="space-y-6">
-                {tabContent?.experience?.items.map((item, index) => (
+                {tabContent?.about?.items.map((item, index) => (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -263,16 +267,14 @@ const ResumePage = () => {
                     key={index}
                     className="border rounded-lg border-lightSky/20 p-6"
                   >
-                    <p className="text-white/90 mb-6 text-lg">
-                      {tabContent.about.bio}
-                    </p>
+                    <p className="text-white/90 mb-6 text-lg">{item.bio}</p>
                     <div className="space-y-4">
                       <div>
                         <h3 className="text-lg font-semibold mb-2">
                           Interests
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                          {tabContent.about.interests.map((interest, i) => (
+                          {item.interests.map((interest, i) => (
                             <Badge
                               key={i}
                               variant="secondary"
@@ -287,7 +289,7 @@ const ResumePage = () => {
                           Languages
                         </h3>
                         <div className="flex flex-wrap gap-2">
-                          {tabContent.about.languages.map((language, i) => (
+                          {item.languages.map((language, i) => (
                             <Badge
                               key={i}
                               variant="secondary"

@@ -71,7 +71,7 @@ const ContactForm = () => {
       });
       if (response?.ok) {
         setSuccess(true);
-        setStatus("Success! Your message has been sent.");
+        setStatus("¡éxito! Tu mensaje ha sido enviado");
         setFormData({
           Name: "",
           Email: "",
@@ -93,18 +93,20 @@ const ContactForm = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-2xl md:text-4xl text-lightSky">
-        Let&apos;s work together
+        Ingetec-Prev Asesorías de Prevención de Riesgo
       </h3>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa aliquam
-        consequatur alias, amet voluptate error hic delectus. Temporibus
-        obcaecati facilis.
+        Se formó ante la necesidad de las empresas de contar con asesoramiento y
+        apoyo especializado en materia de prevención de riesgos laborales.
       </p>
       <>
         {success ? (
           <SuccessMsg status={status} />
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4"
+          >
             <div className="flex flex-col md:flex-row gap-4 items-center">
               <Input
                 type="text"
@@ -160,19 +162,44 @@ const ContactForm = () => {
               disabled={loading}
               className=" disabled:bg-white/10"
             />
-            <Select onValueChange={handleSelectChange} disabled={loading}>
+            <Select
+              onValueChange={handleSelectChange}
+              disabled={loading}
+            >
               <SelectTrigger>
                 <SelectValue placeholder="Select a service" />
               </SelectTrigger>
               <SelectContent className="bg-bodyColor text-white border-white/20">
                 <SelectGroup>
                   <SelectLabel>Select a service</SelectLabel>
-                  <SelectItem value="Web Development">
-                    Web Development
+                  <SelectItem value="servicio">Servicios</SelectItem>
+                  <SelectItem value="Prevención de riesgos laborales">
+                    Prevención de riesgos laborales
                   </SelectItem>
-                  <SelectItem value="SEO Management">SEO Management</SelectItem>
-                  <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
-                  <SelectItem value="Logo Design">Logo Design</SelectItem>
+                  <SelectItem value="Seguridad en el trabajo">
+                    Seguridad en el trabajo
+                  </SelectItem>
+                  <SelectItem value="Normativa de seguridad laboral">
+                    Normativa de seguridad laboral
+                  </SelectItem>
+                  <SelectItem value="Salud ocupacional">
+                    Salud ocupacional
+                  </SelectItem>
+                  <SelectItem value="Gestión de riesgos laborales">
+                    Gestión de riesgos laborales
+                  </SelectItem>
+                  <SelectItem value="Identificación de peligros">
+                    Identificación de peligros
+                  </SelectItem>
+                  <SelectItem value="Evaluación de riesgos">
+                    Evaluación de riesgos
+                  </SelectItem>
+                  <SelectItem value="Medidas preventivas">
+                    Medidas preventivas
+                  </SelectItem>
+                  <SelectItem value="Cultura de seguridad">
+                    Cultura de seguridad
+                  </SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>

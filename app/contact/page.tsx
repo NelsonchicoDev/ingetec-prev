@@ -5,11 +5,11 @@ import { Mail, MapPinCheck, Phone } from "lucide-react";
 import React from "react";
 
 const infoData = [
-  { title: "Phone", description: "(+021) 251 198 254", icon: <Phone /> },
-  { title: "Email", description: "youremail@gmail.com", icon: <Mail /> },
+  { title: "Phone", description: "(+56) 9 31744299", icon: <Phone /> },
+  { title: "Email", description: "hansriffo@ingetec-prev.cl", icon: <Mail /> },
   {
     title: "Address",
-    description: "New Town, through back city",
+    description: "Viña del mar, Ingetec-prevt",
     icon: <MapPinCheck />,
   },
 ];
@@ -23,7 +23,10 @@ const ContactPage = () => {
         </div>
         <div className="w-full md:w-1/3 flex flex-col justify-center gap-4 md:gap-8">
           {infoData?.map((item) => (
-            <div key={item?.title} className="flex items-center space-x-4">
+            <div
+              key={item?.title}
+              className="flex items-center space-x-4"
+            >
               <span className="bg-lightSky/5 p-4 rounded-md">{item?.icon}</span>
               <div>
                 <h3 className="text-white/60 text-sm font-semibold">

@@ -13,7 +13,7 @@ const SuccessMsg = ({ status }: { status: string }) => {
         <Check className="w-10 h-10" />
       </div>
       <h2 className="text-4xl leading-none font-extrabold text-transparent text-outline">
-        Thank You!
+        Gracias!!!
       </h2>
       <p>{status}</p>
     </motion.div>
